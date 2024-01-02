@@ -1,2 +1,2 @@
 # VidTube
-A youtube Clone using react, reduc, typescript and tailwind CSS
+A youtube Clone using react, redux, typescript and tailwind CSS :)
