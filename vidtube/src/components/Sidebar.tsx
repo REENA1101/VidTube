@@ -190,6 +190,26 @@ export default function Sidebar() {
                 );
             })}
         </ul>
+
+        <ul className="flex flex-wrap gap-1 text-xs pt-3 pl-4 text-zinc-400">
+           {
+            textLinks[0].map((name)=>{
+                return <li key={name}>{name}</li>;
+
+            })}
+        </ul>
+        <ul className="flex flex-wrap gap-1 text-xs pt-3 pl-4 text-zinc-400">
+           {
+            textLinks[1].map((name)=>{
+                return <li key={name}>{name}</li>;
+            })}
+        </ul>
+        <br/>
+        <span className="px-4 pt-4 text-xs text-zinc-400">&copy; 2022 Google LLC</span>
+        <br/>
+        <div className="px-4 text-xs text-zinc-400">
+            This clone is for educational purposes only.
+        </div>
     </div>
   )
 }
