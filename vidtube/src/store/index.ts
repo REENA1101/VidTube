@@ -27,6 +27,7 @@ const YoutubeSlice = createSlice({
 
 export const store  = configureStore({
     reducer:{
+        
         youtubeApp: YoutubeSlice.reducer,
     },
 });
