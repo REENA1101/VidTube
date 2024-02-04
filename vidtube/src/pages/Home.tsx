@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import { useAppDispatch, useAppSelector } from '../store/hooks'
+import { useAppDispatch, useAppSelector } from '../store/reducers/hooks'
 import { getHomePageVideos } from '../store/reducers/getHomePageVideos';
 
 export default function Home() {

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {InitialState} from "../Types";
+import {InitialState} from "../../Types";
 import { configureStore, PayloadAction } from "@reduxjs/toolkit";
-import { getHomePageVideos } from "./reducers/getHomePageVideos";
+import { getHomePageVideos } from "./getHomePageVideos";
 
 
 const initialState : InitialState= {
@@ -26,8 +26,7 @@ const YoutubeSlice = createSlice({
 })
 
 export const store  = configureStore({
-    reducer:{
-        
+    reducer:{ 
         youtubeApp: YoutubeSlice.reducer,
     },
 });
