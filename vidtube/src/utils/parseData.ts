@@ -2,8 +2,8 @@ import axios from "axios";
 import {
   convertRawViewstoString,
   parseVideoDuration,
-  timeSince,
 } from "./index";
+import { timeSince } from "./timeSince";
 import { YOUTUBE_API_URL } from "./constants";
 import { HomePageVideos } from "../Types";
 

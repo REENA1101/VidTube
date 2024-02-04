@@ -10,15 +10,16 @@ export default function Home() {
 
   useEffect(()=>{
     dispatch(getHomePageVideos(false));
+    console.log(videos);
   },[dispatch])
 
   return (
-    <div className="max-h-screen overflow-high">
+    <div className="max-h-screen overflow-hidden">
       <div style={{height: "7.5vh"}}>
       <Navbar />
       </div>
 
-      <div className='flex'  style={{height: "92.5vh", marginTop: "11px"}}>
+      <div className='flex' style={{height: "92.5vh", marginTop: "11px"}}>
         <Sidebar/>
       </div>
     </div>
