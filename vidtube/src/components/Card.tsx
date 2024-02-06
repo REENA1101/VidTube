@@ -32,10 +32,27 @@ export default function Card({data}: {data: HomePageVideos}) {
             </div>
             <div>
                 <h3>
-                    <a href="#" className=""></a>
+                    <a href="#" className="line-clamp-2">
+                        {data.videoTitle}
+                    </a>
                 </h3>
+                <div className="text-sm text-gray-400">
+                    <div>
+                        <a href="#" className="hover:text-white">
+                        {data.channelInfo.name}
+                        </a>
+                    </div>
+                    <div>
+                        <span className="after:content-['•'] after:mx-1">
+                            {data.videoViews} views
+                        </span>
+
+                        <span>{data.videoAge}</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
   )
 }
+
