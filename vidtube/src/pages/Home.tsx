@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 import { getHomePageVideos } from '../store/reducers/getHomePageVideos';
+import Spinner from '../components/Spinner';
 
 export default function Home() {
   const dispatch = useAppDispatch();
@@ -21,7 +22,10 @@ export default function Home() {
 
       <div className='flex' style={{height: "92.5vh", marginTop: "11px"}}>
         <Sidebar/>
+        {/* {videos.length? <InfiniteScroll></InfiniteScroll>:<Spinner/>} */}
+        <Spinner/>
       </div>
+
     </div>
   )
 }
