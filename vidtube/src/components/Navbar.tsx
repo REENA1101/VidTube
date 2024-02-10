@@ -6,7 +6,9 @@ import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai'
 import {TiMicrophone} from "react-icons/ti"
 import {IoAppsSharp} from "react-icons/io5"
 import { useAppDispatch, useAppSelector } from '../store/hooks'
-import { getSearchParamsForLocation } from 'react-router-dom/dist/dom'
+import { clearSearchTerm, clearVideos, changeSearchTerm } from '../store'
+import { getSearchPageVideos } from '../store/reducers/getSearchPageVideos'
+
 
 export default function Navbar() {
    const location = useLocation()
@@ -52,7 +54,12 @@ export default function Navbar() {
                         onChange = {(e)=>dispatch(changeSearchTerm(e.target.value))}
                         />
                        
-                     <AiOutlineClose className="text-xl cursor-pointer"/>
+                     <AiOutlineClose className={`text-xl cursor-pointer ${
+                        !searchTerm ? "invisible":"visible"
+                    }`              
+                        }
+                        onClick={()=>dispatch(clearSearchTerm())}
+                        />
                     </div>
                     <button className="h-10 w-16 flex items-center justify-center bg-zinc-800">
                            <AiOutlineSearch  className="text-xl"/>
