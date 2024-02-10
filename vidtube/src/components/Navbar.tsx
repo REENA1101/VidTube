@@ -1,12 +1,19 @@
 import React from 'react'
 import { GiHamburgerMenu } from "react-icons/gi" 
 import { BsYoutube, BsCameraVideo, BsBell } from "react-icons/bs" 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai'
 import {TiMicrophone} from "react-icons/ti"
 import {IoAppsSharp} from "react-icons/io5"
+import { useAppDispatch, useAppSelector } from '../store/hooks'
 
 export default function Navbar() {
+   const location = useLocation()
+   const navigate = useNavigate()
+   const dispatch = useAppDispatch()
+   const searchTerm = useAppSelector((state)=>state.youtubeApp.searchTerm);
+
+
   return (
     <div className="flex justify-between items-center px-14 h-14 bg-[#212121] opacity-95 sticky top-0 z-50">
         <div className="flex gap-8 items-center text-2xl">
