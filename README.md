@@ -22,9 +22,6 @@ React Infinite Scroll Component: Provides infinite scrolling functionality.
 The app:
 ![Screenshot 2024-08-25 104552](https://github.com/user-attachments/assets/db1dc463-1937-415c-b0f5-2d2caa6033e0)
 
-
-![Screenshot 2024-08-25 104603](https://github.com/user-attachments/assets/808153a0-501c-479a-ba9e-7cdff7f88fe3)
-
 ![Screenshot 2024-08-25 104603](https://github.com/user-attachments/assets/1b2d779d-e648-4305-b87e-2681f8fa45a3)
 
 ![Screenshot 2024-08-25 104620](https://github.com/user-attachments/assets/f22803d9-e38f-4ba9-8469-7b63e5013d12)
